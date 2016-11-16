@@ -1,0 +1,19 @@
+<html>
+  <head>
+      {% if title %}
+       <title>{{ title }} </title>
+      {% else %}
+       <title>Welcome to Duplo Store</title>
+      {% endif %}
+      {% if server %}
+      <title> Served by {{server}} </title>
+      {% endif %}
+  </head>
+  <body>
+      <h1>Duplo Store Inventory!</h1>
+      <div>
+        <h3> Served by {{server}} </h3>
+      </div> 
+  </body>
+</html>
+

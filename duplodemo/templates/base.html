@@ -1,0 +1,14 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - Store</title>
+    {% else %}
+    <title>Welcome to Duplo Store</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Store: <a href="/inventory">Home</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
