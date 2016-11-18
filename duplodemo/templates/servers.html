@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Active Servers</h1>
+    {% if servers %} 
+       {% for server in servers %}
+       <div>
+           <p> {{ server.id }} 
+              <b>Name: {{ server.Name }} uptime: {{server.Uptime}}</b>
+           </p>
+       </div>
+       {% endfor %}
+    {% endif %}
+    <div>
+      <h3> Serverd by {{frontend}} </h3>
+    </div>
+{% endblock %}
